@@ -1,0 +1,28 @@
+Here are some brief notes on installing software in
+Ubuntu/an Ubuntu-like terminal.
+
+If you're in Windows 10, I set up an Ubuntu terminal
+by following this webpage (and my laptop hasn't died
+yet, but it's only been an hour):
+
+www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+
+Once that's out of the way, the following commands
+are agnostic to a Windows 10 bash shell or an Ubuntu
+bash shell.
+
+Installing gcc:
+sudo apt-get install gcc
+
+Installing g++:
+sudo apt-get install g++
+
+Installing gnuplot:
+sudo apt-get install gnuplot
+
+Installing git:
+sudo apt-get install git
+
+Python comes pre-installed.
+
+
