@@ -19,6 +19,8 @@ sudo apt-get install g++
 
 Installing gnuplot:
 sudo apt-get install gnuplot
+ * Remark: Examples and demos for gnuplot 5.0 are available at
+     http://gnuplot.sourceforge.net/demo_5.0/
 
 Installing git:
 sudo apt-get install git
