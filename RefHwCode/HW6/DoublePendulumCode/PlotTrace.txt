@@ -1,0 +1,7 @@
+set output "double.eps"
+set term postscript color
+#TraceFile = "Trace_th1=1.00_th2=2.00_v1=2.00_v2=-2.00_tmax=  1000.00_dt=0.001000_tsample=0.010000.dat"
+Trace.dat = 
+plot [0:10.0] TraceFile  using 1:6
+replot [0:10.0]  TraceFile  using 1:7
+set term x11

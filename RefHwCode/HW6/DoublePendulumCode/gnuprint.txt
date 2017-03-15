@@ -1,0 +1,7 @@
+datFile = "Trace_th1=1.00_th2=2.00_v1=2.00_v2=-2.00_tmax=  100.00_dt=0.000010_tsample=0.010000.dat"
+plot [0:1000]    datFile using 1:7 with lines
+replot  datFile using 1:8  with lines
+set output "double4.eps"
+set term postscript color
+replot
+set term x11
