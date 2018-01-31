@@ -12,6 +12,10 @@ int main(int argc, char** argv)
     if (thread_id == 0)
       nthreads = omp_get_num_threads();
 
+    // You need this to make sure every thread learns how many
+    // threads there are in total before printing.
+    #pragma omp barrier
+
     printf("Hello world from thread %d of %d!\n", thread_id, nthreads);
   }
 
