@@ -15,6 +15,9 @@
 ## Ask for nodes with 4 cores, 8 cores total (so 2 nodes)
 #$ -pe mpi_4_tasks_per_node 8 
 
+# Want more flags? Look here:
+# http://www.bu.edu/tech/support/research/system-usage/running-jobs/submitting-jobs/
+
 
 # Immediately form fused output/error file, besides the one with the default name.
 #exec >  ${SGE_O_WORKDIR}/${JOB_NAME}-${JOB_ID}.scc.out 2>&1
