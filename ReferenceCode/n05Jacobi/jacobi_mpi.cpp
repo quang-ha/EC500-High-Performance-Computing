@@ -12,7 +12,7 @@
 #define ITER_MAX 10000000
 
 // How often to check the relative residual
-#define RESID_FREQ 10000
+#define RESID_FREQ 1000
 
 // The residual
 #define RESID 1e-2
@@ -50,9 +50,9 @@ int main(int argc, char** argv)
 
    //printf("I am rank %d of %d and I have a local size %d.\n", my_rank, world_size, local_size); 
    
-   x = (double*)malloc(local_size*sizeof(double));
-   xtmp = (double*)malloc(local_size*sizeof(double));
-   b = (double*)malloc(local_size*sizeof(double));
+   x = new double[local_size];
+   xtmp = new double[local_size];
+   b = new double[local_size];
 
    for (i=0;i<local_size;i++) { x[i] = 0.0; xtmp[i] = 0.0; b[i] = 0.0; }
    
